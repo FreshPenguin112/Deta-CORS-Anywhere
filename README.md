@@ -2,7 +2,7 @@
 
 Simple CORS Proxy in Deta.
 
-Deta Discovery: <https://deta.space/discovery/@pillowwork-deta/detaproxy>
+Deta Discovery: <https://deta.space/discovery/@pillowwork-deta/corsanywhere>
 
 Example:
 
