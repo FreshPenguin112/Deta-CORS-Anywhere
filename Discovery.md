@@ -8,7 +8,7 @@ ported_from: https://github.com/Rob--W/cors-anywhere
 Example:
 
 ```
-https://xxxx-deta.app/https://example.com
+https://detaproxy-xxxx.deta.app/https://raw.githubusercontent.com/Rob--W/cors-anywhere/master/README.md
 ```
 
 For more documents, visit <https://www.npmjs.com/package/cors-anywhere>.
