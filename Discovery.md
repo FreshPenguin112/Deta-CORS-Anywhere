@@ -5,6 +5,12 @@ git: https://github.com/xjzh123/Deta-CORS-Anywhere
 ported_from: https://github.com/Rob--W/cors-anywhere
 ---
 
+# Deta-CORS-Anywhere
+
+Simple CORS Proxy in Deta.
+
+GitHub repo: <https://github.com/xjzh123/Deta-CORS-Anywhere>
+
 Example:
 
 ```
