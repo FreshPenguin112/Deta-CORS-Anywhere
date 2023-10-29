@@ -1,5 +1,5 @@
 ---
-app_name: CORS Anywhere
+app_name: CORS Proxy
 tagline: Simple CORS Proxy in Deta
 git: https://github.com/xjzh123/Deta-CORS-Anywhere
 ported_from: https://github.com/Rob--W/cors-anywhere
