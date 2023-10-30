@@ -9,3 +9,8 @@ micros:
     dev: npm start
     run: npm start
     public: true
+    presets:
+      env:
+        - name: CORS_PROXY_OPTIONS
+          description: Options to send to createServer() in JSON, as described in https://www.npmjs.com/package/cors-anywhere#server.
+          default: '{"originWhitelist":[],"removeHeaders":["cookie","cookie2"]}'

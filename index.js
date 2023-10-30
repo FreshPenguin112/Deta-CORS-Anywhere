@@ -1,14 +1,19 @@
 import cors_proxy from 'cors-anywhere'
 
 // Listen on a specific host via the HOST environment variable
-var host = process.env.HOST || '0.0.0.0';
+const host = process.env.HOST || '0.0.0.0'
 // Listen on a specific port via the PORT environment variable
-var port = process.env.PORT || 8080;
+const port = process.env.PORT || 8080
 
-cors_proxy.createServer({
-    originWhitelist: [], // Allow all origins
-    // requireHeader: ['origin', 'x-requested-with'],
-    removeHeaders: ['cookie', 'cookie2']
-}).listen(port, host, function() {
-    console.log('Running CORS Anywhere on ' + host + ':' + port);
-});
+if (!process.env.CORS_PROXY_OPTIONS) {
+    process.env.CORS_PROXY_OPTIONS = JSON.stringify({
+        originWhitelist: [],
+        removeHeaders: ['cookie', 'cookie2'],
+    })
+}
+
+const corsProxyOptions = JSON.parse(process.env.CORS_PROXY_OPTIONS)
+
+cors_proxy.createServer(corsProxyOptions).listen(port, host, function () {
+    console.log('Running CORS Anywhere on ' + host + ':' + port)
+})
