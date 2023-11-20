@@ -1,0 +1,8 @@
+name: deploy
+on: [push]
+jobs:
+  Deta-Space-Deployment-Github-Action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deta-Space-Deployment-Github-Action
+      - uses: neobrains/space-deployment-github-action@v0.5
