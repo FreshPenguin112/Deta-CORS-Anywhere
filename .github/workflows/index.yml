@@ -5,9 +5,10 @@ jobs:
   push-to-space:
     runs-on: ubuntu-latest
     outputs:
-      out: ${{ steps.my-action.outputs.outputs }}
+      out: ${{ steps.retry.outputs.outputs }}
     steps:
       - name: retry action
+        id: retry
         uses: Wandalen/wretry.action@v1.3.0
         with: 
           attempt_limit : 100
