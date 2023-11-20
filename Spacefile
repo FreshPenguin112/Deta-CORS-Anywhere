@@ -9,4 +9,5 @@ micros:
       - npm install yarn
     dev: node index.js
     run: node index.js
-    public: true
+    public_routes: 
+      - "/*"
