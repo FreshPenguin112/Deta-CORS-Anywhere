@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Deta-Space-Deployment-Github-Action
-      - uses: neobrains/space-deployment-github-action@v0.5
+        uses: neobrains/space-deployment-github-action@v0.5
