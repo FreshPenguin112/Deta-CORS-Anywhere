@@ -10,9 +10,8 @@ jobs:
         uses: Wandalen/wretry.action@v1.3.0
         with: 
           attempt_limit : 100
-          action: neobrains/space-deployment-github-action@v0.5
+          action: lizheming/deta-action@master
           with: |
             access_token: ${{ secrets.ACCESS_TOKEN }}
-            project_id: ${{ secrets.PROJECT_ID }}
-            space_push: true
-            list_on_discovery: false
+            id: ${{ secrets.PROJECT_ID }}
+            listed: false
