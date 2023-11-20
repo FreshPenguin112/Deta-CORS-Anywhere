@@ -7,6 +7,6 @@ micros:
     engine: nodejs16
     commands:
       - npm install yarn
-    dev: npm start
-    run: npm start
+    dev: node index.js
+    run: node index.js
     public: true
